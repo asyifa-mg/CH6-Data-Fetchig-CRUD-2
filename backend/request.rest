@@ -1,0 +1,29 @@
+GET http://localhost:8000/doctors
+
+###
+GET http://localhost:8000/doctors/6
+
+###
+POST http://localhost:8000/create
+Content-Type: :application/json
+
+{
+    "name": "Yunita",
+    "spesialis":"THT",
+    "email":"yuni@gmail.com",
+    "gender":"Female"
+}
+
+###
+PATCH http://localhost:8000/update/5
+Content-Type: :application/json
+
+{
+  "name": "Sintia",
+  "spesialis": "Penyakit Dalam",
+  "email": "sintia11@gmail.com",
+  "gender": "Male"
+}
+
+###
+DELETE http://localhost:8000/delete/11
